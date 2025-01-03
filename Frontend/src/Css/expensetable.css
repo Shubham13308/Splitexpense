@@ -1,0 +1,72 @@
+.expense-table {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: auto; /* Enable horizontal scroll */
+  }
+  
+  .expense-table h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .expense-table th,
+  .expense-table td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+    white-space: nowrap; /* Prevent table cells from wrapping */
+  }
+  
+  .expense-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .expense-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .expense-table tr:hover {
+    background-color: #eaf2ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .expense-table {
+      overflow-x: auto; /* Ensure table is scrollable on smaller screens */
+    }
+  
+    .expense-table th,
+    .expense-table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .expense-table th,
+    .expense-table td {
+      font-size: 10px;
+      padding: 6px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b87c4537.css",
+    "main.js": "/static/js/main.a592834a.js",
+    "static/js/453.eb7a6003.chunk.js": "/static/js/453.eb7a6003.chunk.js",
+    "static/media/diego-jimenez-A-NVHPka9Rk-unsplash.jpg": "/static/media/diego-jimenez-A-NVHPka9Rk-unsplash.563265731d20f5f59733.jpg",
+    "static/media/RnXFq.jpg": "/static/media/RnXFq.630565f7079bc3f0cf47.jpg",
+    "index.html": "/index.html",
+    "main.b87c4537.css.map": "/static/css/main.b87c4537.css.map",
+    "main.a592834a.js.map": "/static/js/main.a592834a.js.map",
+    "453.eb7a6003.chunk.js.map": "/static/js/453.eb7a6003.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b87c4537.css",
+    "static/js/main.a592834a.js"
+  ]
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;600&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  animation: fadeIn 1s ease-in-out;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in-card {
+  animation: fadeInCard 0.5s forwards;
+}
+
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.card:focus {
+  outline: 2px solid #17a2b8;
+  outline-offset: 4px;
+}
+
+/* Scrollable List */
+.scrollable-list {
+  max-height: 500px; /* Set a fixed height */
+  overflow-y: scroll; /* Make it scrollable if content exceeds max-height */
+  padding-right: 15px; /* Prevent scroll bar from covering content */
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet View (up to 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .scrollable-list {
+    max-height: 400px; /* Reduce height for smaller screens */
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile View (up to 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .fade-in-card {
+    animation: fadeInCard 0.6s forwards;
+  }
+
+  .scrollable-list {
+    max-height: 300px; /* Reduce height further on mobile */
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
