@@ -7,12 +7,12 @@
       "config": { "distDir": "build" }
     },
     {
-      "src": "backend/app.js",
+      "src": "app.js",   // This should point to the root where app.js is located
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "backend/app.js" },
+    { "src": "/api/(.*)", "dest": "app.js" },
     { "src": "/(.*)", "dest": "frontend/build/$1" }
   ]
 }
